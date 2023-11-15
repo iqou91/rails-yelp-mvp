@@ -1,0 +1,16 @@
+<div class="container mt-5">
+  <ul>
+    <li class="card m-3 rounded-5 ps-2 text-center text-success">
+
+      <p class="mb-2">Nom: <%= @restaurant.name %></p>
+      <p class="mb-2">Adresse: <%= @restaurant.address %></p>
+      <p class="mb-2">Cuisine: <%= @restaurant.category %></p>
+      <p class="mb-2">Téléphone: <%= @restaurant.phone_number %></p>
+
+      <div class="btn btn-danger">
+        <%= link_to "Retour à tous les restaurants", restaurants_path %>
+      </div>
+
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,9 @@
+<div class="container d-flex justify-content-between m-5">
+  <% @restaurants.each do |restaurant| %>
+    <div class="card m-3 rounded-5 ps-2 text-center text-success">
+      <p class="m-3">Nom: <%= link_to restaurant.name, restaurant_path(restaurant) %></p>
+      <p class="m-3">Cuisine: <%= restaurant.category %></p>
+      <div class = "m-3"><%= link_to "See details", restaurant_path(restaurant), class: "btn btn-primary"%></div>
+    </div>
+  <% end %>
+</div>
